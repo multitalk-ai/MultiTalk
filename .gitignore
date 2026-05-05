@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local virtualenvs / build artifacts
+.venv/
+venv/
+env/
+build/
+dist/
+
+# Editor / IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Agent / tool config
+.claude/
+.codex
+.aider*
+
+# Runtime artifacts not meant for the repo
+results/
+logs/
+**/offline_output*/
+**/run_*/
+*.log
+
+# Local clone of the HF dataset + judge endpoint config
+data/
+MultiTalkBench/data/
+MultiTalkBench/endpoints.json
+
+# Local data — distributed via the HF dataset, not the GitHub repo
+MultiTalkBench/datasets/
+MultiTalkBench/prompts/
+MultiTalkBench/prompts_train/
+
+# Progress / cache files emitted by gen_prompts/*
+MultiTalkBench/gen_prompts/*_progress.json
+MultiTalkBench/batch_generate_progress.json
+
+# Large media artifacts checked in by mistake
+*.flac
+*.wav
+*.mp4
+*.png
+!docs/**/*.png

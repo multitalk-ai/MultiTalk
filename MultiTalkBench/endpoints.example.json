@@ -1,0 +1,7 @@
+{
+  "_comment": "Copy to endpoints.json (gitignored) and list the OpenAI-compatible base URLs for your judge LLM deployment. Each entry must end before /v1/chat/completions; the client will append /chat/completions.",
+  "endpoints": [
+    "http://localhost:8000/v1",
+    "http://localhost:8001/v1"
+  ]
+}

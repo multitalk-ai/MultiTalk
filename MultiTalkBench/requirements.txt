@@ -1,0 +1,16 @@
+# Core eval pipeline
+numpy>=1.24
+soundfile>=0.12
+librosa>=0.10
+tqdm>=4.66
+
+# Dataset distribution
+huggingface_hub>=0.24
+
+# Model adapters (uncomment whichever ones you actually run)
+# torch>=2.3
+# transformers>=4.45
+# qwen-omni-utils  # required by models/qwen3_omni.py
+# Moshi adapters additionally need a clone of moshi-finetune
+# (https://github.com/kyutai-labs/moshi-finetune) on disk; see models/moshiko.py
+# and models/moshi_multitalk.py.
